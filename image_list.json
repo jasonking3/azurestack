@@ -9,15 +9,6 @@
     "aliases":{
       "type":"object",
       "value":{
-        "Other":{
-          "elk":{
-            "offer": "elk",
-            "publisher": "bitnami",
-            "sku": "4-6",
-            "urn": "bitnami:elk:4-6:5.3.20",
-            "version": "5.3.20"
-          }
-        },
         "Linux":{
           "CentOS":{
             "offer": "CentOS",
@@ -28,26 +19,15 @@
           }
         },
         "Windows":{
-          "WindowsS
-  {
-    "offer": "WindowsServer",
-    "publisher": "MicrosoftWindowsServer",
-    "sku": "2016-Datacenter",
-    "urn": "MicrosoftWindowsServer:WindowsServer:2016-Datacenter:2016.127.20180719",
-    "version": "2016.127.20180719"
-  },
-  {
-    "offer": "WindowsServer",
-    "publisher": "MicrosoftWindowsServer",
-    "sku": "2016-Datacenter",
-    "urn": "MicrosoftWindowsServer:WindowsServer:2016-Datacenter:2016.127.20180510",
-    "version": "2016.127.20180510"
-  },
-  {
-    "offer": "jenkins",
-    "publisher": "bitnami",
-    "sku": "1-650",
-    "urn": "bitnami:jenkins:1-650:2.46.21",
-    "version": "2.46.21"
+          "Win2016Datacenter":{
+			"offer": "WindowsServer",
+			"publisher": "MicrosoftWindowsServer",
+			"sku": "2016-Datacenter",
+			"urn": "MicrosoftWindowsServer:WindowsServer:2016-Datacenter:2016.127.20180719",
+			"version": "2016.127.20180719"
+          }
+        }
+      }
+    }
   }
-]
+}
