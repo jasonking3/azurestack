@@ -1,18 +1,34 @@
-[
-  {
-    "offer": "elk",
-    "publisher": "bitnami",
-    "sku": "4-6",
-    "urn": "bitnami:elk:4-6:5.3.20",
-    "version": "5.3.20"
-  },
-  {
-    "offer": "CentOS",
-    "publisher": "OpenLogic",
-    "sku": "7.4",
-    "urn": "OpenLogic:CentOS:7.4:7.4.20180118",
-    "version": "7.4.20180118"
-  },
+{
+  "$schema":"http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+  "contentVersion":"1.0.0.0",
+  "parameters":{},
+  "variables":{},
+  "resources":[],
+
+  "outputs":{
+    "aliases":{
+      "type":"object",
+      "value":{
+        "Other":{
+          "elk":{
+            "offer": "elk",
+            "publisher": "bitnami",
+            "sku": "4-6",
+            "urn": "bitnami:elk:4-6:5.3.20",
+            "version": "5.3.20"
+          }
+        },
+        "Linux":{
+          "CentOS":{
+            "offer": "CentOS",
+            "publisher": "OpenLogic",
+            "sku": "7.4",
+            "urn": "OpenLogic:CentOS:7.4:7.4.20180118",
+            "version": "7.4.20180118"
+          }
+        },
+        "Windows":{
+          "WindowsS
   {
     "offer": "WindowsServer",
     "publisher": "MicrosoftWindowsServer",
