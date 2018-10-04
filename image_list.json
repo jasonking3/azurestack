@@ -1,0 +1,37 @@
+[
+  {
+    "offer": "elk",
+    "publisher": "bitnami",
+    "sku": "4-6",
+    "urn": "bitnami:elk:4-6:5.3.20",
+    "version": "5.3.20"
+  },
+  {
+    "offer": "CentOS",
+    "publisher": "OpenLogic",
+    "sku": "7.4",
+    "urn": "OpenLogic:CentOS:7.4:7.4.20180118",
+    "version": "7.4.20180118"
+  },
+  {
+    "offer": "WindowsServer",
+    "publisher": "MicrosoftWindowsServer",
+    "sku": "2016-Datacenter",
+    "urn": "MicrosoftWindowsServer:WindowsServer:2016-Datacenter:2016.127.20180719",
+    "version": "2016.127.20180719"
+  },
+  {
+    "offer": "WindowsServer",
+    "publisher": "MicrosoftWindowsServer",
+    "sku": "2016-Datacenter",
+    "urn": "MicrosoftWindowsServer:WindowsServer:2016-Datacenter:2016.127.20180510",
+    "version": "2016.127.20180510"
+  },
+  {
+    "offer": "jenkins",
+    "publisher": "bitnami",
+    "sku": "1-650",
+    "urn": "bitnami:jenkins:1-650:2.46.21",
+    "version": "2.46.21"
+  }
+]
