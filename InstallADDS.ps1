@@ -1,4 +1,4 @@
-configuration ADInstall
+configuration InstallADDS
 {
     param 
     ( 
@@ -54,4 +54,4 @@ $ConfigData = @{
         @{ NodeName="localhost"; PSDscAllowPlainTextPassword = $true }
 )}
 
-ADInstall -ConfigurationData $ConfigData
+InstallADDS -ConfigurationData $ConfigData
