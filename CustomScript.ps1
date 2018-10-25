@@ -1,22 +1,6 @@
-# Required to install PSGallery modules
-Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+$url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"
+$file = "$env:temp\ConfigureRemotingForAnsible.ps1"
 
-# Required to use xADDomain in DSC
-Install-Module -Name xActiveDirectory -Force
+(New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file)
 
-# Configure required LCM settings
-[DSCLocalConfigurationManager()]
-configuration ConfigureLCM
-{
-    Node localhost
-    {
-        Settings
-        {
-            RebootNodeIfNeeded = $true
-        }
-    }
-}
-
-ConfigureLCM
-
-Set-DscLocalConfigurationManager -Path ConfigureLCM
+powershell.exe -ExecutionPolicy ByPass -File $file
