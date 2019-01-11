@@ -1,2 +1,2 @@
-# Using Azure CLI on AzureStack
+# azurestack
 
